@@ -1,10 +1,21 @@
+* {
+    padding: 0;
+}
+
 body {
     font-family: Muli;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #56CCF2;
     height: 848px;
+}
+
+.header {
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -98,8 +109,15 @@ border-radius: 64px;
 }
 
 .working_img {
-    position: absolute;
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
 }
+
+.working_img img {
+    width: 100%;
+}
+
 
 .bottomleft {
     position: absolute;
@@ -135,21 +153,24 @@ color: #FFFFFF;
 }
 
 object {
-    height: 21px;
+    height: 30px;
     position: relative;
-    top: 4px;
+    top: 2px;
+    left: 1px;
 }
 
 .container {
     display: flex;
-    background-color: #E5E5E5; 
     flex-direction: row;  
+    justify-content: space-between;
+    max-width: 980px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .container2 {
     background-color: #E5E5E5; 
-    padding-top:486px;
+    padding-top: 325px;
     padding-bottom: 160px;
 }
 
@@ -189,6 +210,9 @@ position: relative;
 top: -22px;
 }
 
+.wraper_3 {
+    background-color: #E5E5E5; 
+}
 .container .item {
     width: 264px;
 
@@ -196,15 +220,23 @@ top: -22px;
 
 .item-1 {
     width: 362px;
-    margin: 160px 10% 0 0;
+    margin: 150px 0 100px;
+    z-index: 1;
 }
 
 .item-2 {
-    width: 50%;
     display: flex;
     flex-direction: row;
     position: relative;
     justify-items: center;
+    justify-content: space-between;
+    max-width: 540px;
+}
+
+.wedo {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .container-name {
@@ -221,7 +253,7 @@ top: -22px;
 }
 
 .second-column {
-    top: 150px;
+    top: 160px;
 }
 
 .scuare {
@@ -230,7 +262,7 @@ top: -22px;
     box-sizing: border-box;
     width: 240px;
     height: 256px;
-    margin: 128px 45px;
+    margin: 128px 25px;
     padding: 48px 32px;
     box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
     font-size: 12.6px;
@@ -295,29 +327,30 @@ top: -22px;
     margin: 0;
 }
 
-.features {
-    margin: 0 auto;
-    display: flex;
+.wraper_4 {
+    
     background-color: #56CCF2;
-    flex-direction: row;  
-    margin: 0 auto;
-    justify-content: space-between;
-        
+
 }
 
-.features .item-1 {
-    width: 362px;
-    margin: 160px 10% 0 0;
-}
+.features {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+        
 
 
 .photo {
-    width: 50%;
+    position: absolute;
+    right: 0;
 }
 
 .photo img {
-    float: right;
-    height: 100%;
+    height: 918px;
 }
 
 .icon {
@@ -370,24 +403,24 @@ p {
 
 .personal {
     display: flex; 
-    flex-direction: row;  
-    margin: 0 auto;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .personal .item {
-    width: 314px;
-    height: 420px;
+    box-sizing: border-box;
+    width: 280px;
+    height: 460px;
     text-align: center;
     background: #FEFEFE;
     box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
-    margin: 78px;
     padding: 32px;
 }
 
 .testimonials {
     padding-top: 165px;
-
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 .personal .item .decor {
@@ -485,7 +518,7 @@ color: #F25656;
     height: 500px;
     padding-top: 300px;
     position: relative;
-    top: -200px;
+    top: -155px;
     z-index: -3;
 }
 
@@ -607,13 +640,13 @@ border-radius: 64px;
 }
 
 .moto .g {
-    top: 38%;
-    left: 82%;
+    top: 34%;
+    left: 79%;
 }
 
 .moto .h {
-    top: 68%;
-    left: 87%;
+    top: 77%;
+    left: 68%;
 }
 
 .moto .j {
