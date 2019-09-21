@@ -16,10 +16,12 @@ header {
 .header {
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 12px 20px;
 }
 
 .logo {
+  position: relative;
+  bottom: 13px;
   float: left;
   margin-right: 20%;
 }
@@ -36,38 +38,6 @@ header {
   padding: 25px;
   box-sizing: border-box;
 }
-
-.nav ul li a:hover:not(.active) {
-  border-bottom: 2px solid #FCC304;
-}
-
-/*
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-}
-
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-*/
 
 ul {
 
@@ -87,7 +57,7 @@ li a {
   display: block;
   color: #fff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 4px 16px;
   box-sizing: border-box;
   text-decoration: none;
   font-style: normal;
@@ -96,9 +66,25 @@ li a {
   line-height: 150%;
 }
 
-/*li a:hover:not(.active) {
-  border-bottom: #FCC304;
-}*/
+.nav a::after {
+  content: '';
+  position: relative;
+  left: 0;
+  margin: 0 auto;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #fff;
+  transition: all .3s;
+
+}
+
+.nav a:hover:not(.active)::after {
+  width: 80%;
+  background: #FCC304;
+  transition: all .3s;
+}
 
 li a.active {
   border-bottom: 3px solid #FCC304;
@@ -142,13 +128,16 @@ li a.active {
   padding: 14px 16px;
   box-sizing: border-box;
   text-decoration: none;
-  box-shadow: 2px 5px 16px rgba(0, 0, 0, 0.02);;
+  box-shadow: 2px 5px 16px rgba(0, 0, 0, 0.02);
+  ;
   transition: all 1s;
   position: relative;
 }
 
-.header_text a:hover, .moto .button:hover, .contact .form .button:hover {
-    box-shadow: 2px 5px 16px rgba(0, 0, 0, 1);
+.header_text a:hover,
+.moto .button:hover,
+.contact .form .button:hover {
+  box-shadow: 2px 5px 16px rgba(0, 0, 0, 1);
   transition: all 1s;
 }
 
@@ -161,7 +150,6 @@ li a.active {
 .working_img img {
   width: 100%;
 }
-
 
 .bottomleft {
   position: absolute;
@@ -197,7 +185,7 @@ li a.active {
 }
 
 .testimonials .head {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 object {
@@ -274,7 +262,6 @@ object {
 
 .container .item {
   width: 264px;
-
 }
 
 .item-1 {
@@ -340,8 +327,6 @@ object {
   line-height: 1.5;
 }
 
-
-
 .one {
   background-color: rgba(86, 203, 242, 0.11);
 }
@@ -391,7 +376,6 @@ object {
 .wraper_4 {
 
   background-color: #56CCF2;
-
 }
 
 .features {
@@ -403,8 +387,6 @@ object {
   padding: 0 20px;
   box-sizing: border-box;
 }
-
-
 
 .photo {
   position: absolute;
@@ -513,10 +495,7 @@ p {
   height: 2px;
   color: black;
   margin: 30px auto;
-
 }
-
-
 
 .personal .item .name {
   font-style: normal;
@@ -620,10 +599,9 @@ p {
   background: #2F80ED;
   border-radius: 64px;
   text-align: center;
-    box-shadow: 2px 5px 16px rgba(0, 0, 0, 0.02);;
+  box-shadow: 2px 5px 16px rgba(0, 0, 0, 0.02);
   transition: all 1s;
   padding: 14px 16px;
-
   text-decoration: none;
 }
 
@@ -642,7 +620,7 @@ p {
   border-radius: 64px;
   text-align: center;
   padding: 14px 16px;
-    box-shadow: 2px 5px 16px rgba(0, 0, 0, 0.02);;
+  box-shadow: 2px 5px 16px rgba(0, 0, 0, 0.02);
   transition: all 1s;
   text-decoration: none;
 }
@@ -765,7 +743,6 @@ footer {
   padding: 0 20px;
   padding: 0 20px;
   justify-content: space-between;
-
 }
 
 .form,
